@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "574bf11e-3972-400f-86e8-250d215d6d90",
+		"name": "WEB assignment 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41193164"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"1984\",\r\n  \"author\": \"George Orwell\",\r\n  \"year\": 1949,\r\n  \"genre\": \"Dystopian\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/books/67992037ff925b6eaf2c553f",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"1984 (Updated)\",\r\n  \"author\": \"George Orwell\",\r\n  \"year\": 1949,\r\n  \"genre\": \"Dystopian\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/books/679bb0e479d97ab2d7fc0e8c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books",
+						"679bb0e479d97ab2d7fc0e8c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/books/67992037ff925b6eaf2c553f",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books/679bb0e479d97ab2d7fc0e8c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books",
+						"679bb0e479d97ab2d7fc0e8c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/weather/Astana",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/weather/Astana",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"weather",
+						"Astana"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
